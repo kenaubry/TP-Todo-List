@@ -56,39 +56,11 @@ Les administrateurs peuvent gérer les utilisateurs et superviser les projets.
 
 ### 🔹 Prérequis
 
-* **Option 1 : Avec Docker**
-
-  * [Docker](https://docs.docker.com/get-docker/) installé sur votre machine
-* **Option 2 : Sans Docker**
+* **Sans Docker**
 
   * **Backend** : JDK 17+ et Maven (`mvn -v`)
   * **Frontend** : Node.js 18+ et Angular CLI (`npm install -g @angular/cli`)
   * **Base de données** : PostgreSQL 15+ installé localement
-
----
-
-### 🔹 Lancer avec Docker (recommandé 🚀)
-
-Tout est packagé dans **un seul Dockerfile**.
-
-1. Construire l’image Docker :
-
-   ```bash
-   docker build -t todo-app .
-   ```
-
-2. Lancer le conteneur :
-
-   ```bash
-   docker run -p 8080:8080 -p 4200:4200 todo-app
-   ```
-
-3. Accéder à l’application :
-
-   * Frontend : [http://localhost:4200](http://localhost:4200)
-   * Backend API : [http://localhost:8080/api](http://localhost:8080/api)
-
-📌 **Remarque** : La base PostgreSQL est lancée dans le même conteneur.
 
 ---
 
