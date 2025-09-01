@@ -1,10 +1,4 @@
-Parfait 👍 Je vais te préparer un **README.md** complet, bien structuré et professionnel, qui explique ton projet, les fonctionnalités, la stack utilisée, et surtout **comment le lancer avec Docker** ou **sans Docker**.
-
-Voici une version rédigée :
-
----
-
-# 📝 ToDo App – Gestion collaborative des tâches
+# 📝 ToDo App 
 
 ## 📌 Description
 
