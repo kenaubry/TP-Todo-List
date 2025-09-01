@@ -1,0 +1,40 @@
+# ==========================
+#   BACKEND (Spring Boot)
+# ==========================
+/todo/target/
+/*.log
+*.class
+*.jar
+
+# Maven Wrapper (on garde les fichiers mais pas les caches)
+.mvn/wrapper/maven-wrapper.jar
+
+# ==========================
+#   FRONTEND (Angular)
+# ==========================
+/todo-frontend/node_modules/
+/todo-frontend/dist/
+/todo-frontend/.angular/cache/
+/todo-frontend/.npm/
+
+# ==========================
+#   IDEs & Editors
+# ==========================
+/.idea/
+/.vscode/
+/*.iml
+.classpath
+.project
+.settings/
+
+# ==========================
+#   OS files
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+#   Environment / Secrets
+# ==========================
+.env
+db-data/

@@ -1,0 +1,415 @@
+* {
+  background-color: transparent;
+}
+
+/* src/app/components/dashboard/dashboard.css */
+
+.task-add {
+  margin-bottom: 15px;
+}
+
+.task-add input {
+  width: 95%;
+  background-color: #f5f6f8;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.task-form-inline {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.task-form-inline input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.task-form-inline button {
+  background: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Sidebar animation */
+.sidebar {
+  width: 220px;
+  background: #ececec;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.collapsed {
+  width: 40px;
+  padding: 20px 8px;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: transparent;
+}
+
+.sidebar h2,
+.sidebar ul,
+.sidebar .logout {
+  transition: opacity 0.2s ease;
+}
+
+.sidebar.collapsed h2,
+.sidebar.collapsed ul,
+.sidebar.collapsed .logout {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.task-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.task-edit-form label {
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.task-edit-form input,
+.task-edit-form textarea {
+  padding: 8px;
+  background-color: #ececec;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.task-edit-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.task-actions button:first-of-type {
+  background: #2196f3;
+  color: white;
+}
+
+.task-actions button:nth-of-type(2) {
+  background: #4caf50;
+  color: white;
+}
+
+.task-actions button:last-of-type {
+  background: #ff4d4d;
+  color: white;
+}
+
+.title-edit input {
+  font-size: 20px;        /* taille proche d’un h2 */
+  font-weight: 600; 
+  padding: 8px 12px;
+  background: transparent; /* pas de fond */
+}
+
+.title-edit input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.task-detail textarea {
+  min-height: 120px;   /* hauteur fixe */
+  max-height: 200px;   /* facultatif : limite si jamais ça grandit */
+  background-color: transparent;
+}
+
+/* Style de l'input date */
+
+
+
+/* Supprimer l’icône sur Firefox */
+
+.user-form {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.user-form input, 
+.user-form select {
+  width: 95%;
+  background-color: #f5f6f8;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.user-form button {
+  align-self: flex-start;
+  background: #2196F3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-user {
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ececec;
+  color: black;
+  cursor: pointer;
+}
+
+.project-color {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.add-project input {
+  width: 95%;
+  padding: 6px;
+  border: 0px;
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+/* Champ projet (même style que date-field) */
+
+/* Style du select projet */
+
+
+
+/* Titres des catégories */
+.sidebar-title {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 15px 0 8px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+/* Séparateur gris */
+.sidebar-separator {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+/* Ligne d’un champ du formulaire */
+.form-row {
+  display: grid;
+  grid-template-columns: 150px 1fr; /* 150px pour label, le reste pour champ */
+  align-items: center;
+  margin: 12px 0;
+  gap: 12px;
+}
+
+/* Style des labels */
+.form-row label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+/* Champs (input/select) */
+.form-row input,
+.form-row select,
+.form-row textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: transparent;
+  padding: 6px 10px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Colonne de droite : détail d’une tâche */
+.task-detail {
+  flex: 1;
+  background: #ececec;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pousse les boutons en bas */
+}
+
+/* Contenu (tout sauf les boutons) */
+.task-edit-form,
+.form-row {
+  margin-bottom: 15px;
+}
+
+/* Boutons en bas */
+.task-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: auto; /* ✅ assure que ça colle au bas */
+}
+
+.task-actions button:last-of-type {
+  background: #2196F3;
+  color: white;
+}
+
+.task-actions button:first-of-type {
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px; /* espace entre les deux boutons */
+  margin-top: auto; /* pousse les boutons vers le bas */
+}
+
+.task-actions button {
+  flex: 1; /* ✅ chaque bouton prend 50% */
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Style individuel */
+
+.assigned-users {
+  display: flex;
+  flex-direction: row;
+  margin: 12px 0;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.badge {
+  background: #eee;
+  color: #333;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: default;
+}
+
+.badge.user {
+  background: #f5f6f8;
+  color: black;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  display: inline-flex;      /* 👈 flex pour aligner */
+  align-items: center;       /* 👈 centre vertical */
+  justify-content: center;   /* 👈 centre horizontal */
+  width: auto;
+  min-width: fit-content;
+  line-height: 1;            /* 👈 évite le décalage du texte */
+  height: 10px;
+}
+
+/* Dropdown */
+
+.assign-search {
+  position: relative;
+  margin-top: 10px;
+}
+
+.assign-search input {
+  width: 100%;
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.assign-search ul {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  max-height: 150px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.assign-search li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.badge.user .remove {
+  margin-left: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  transition: color 0.2s;
+}
+
+.badge.user .remove:hover {
+  color: #ff0000;
+}

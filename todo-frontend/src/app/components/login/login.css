@@ -1,0 +1,87 @@
+/* Conteneur principal centré */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
+  background: #f5f6f8;
+}
+
+.auth-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.auth-card h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-card input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f5f6f8;
+  transition: border 0.2s;
+}
+
+.auth-card input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.auth-card button {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.auth-card button:hover {
+  background: #1976d2;
+}
+
+.auth-card a {
+  text-align: center;
+  font-size: 13px;
+  color: #2196f3;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}
+
+/* Message d’erreur */
+.auth-card .error {
+  color: #ff4d4d;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Message succès/info */
+.auth-card .message {
+  color: #4caf50;
+  font-size: 13px;
+  text-align: center;
+}
